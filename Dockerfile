@@ -1,4 +1,4 @@
-FROM openjdk:11-jre
+FROM openjdk:10-jre
 
 RUN groupadd foogroup && useradd -g foogroup foouser
 
