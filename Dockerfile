@@ -1,8 +1,8 @@
-FROM openjdk:10-jdk
+FROM openjdk:12-jdk
 COPY DockerJava10.java /
 RUN javac DockerJava10.java
 
-FROM openjdk:10-jre
+FROM openjdk:12-jdk
 RUN groupadd foogroup && useradd -g foogroup foouser
 USER foouser
 COPY show.sh /
